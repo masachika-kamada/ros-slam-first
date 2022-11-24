@@ -11,7 +11,7 @@ sudo apt-get install ros-melodic-joy ros-melodic-teleop-twist-joy ros-melodic-te
 ## ■ catkin build
 
 ```
-$ catkin b
+catkin b
 ```
 
 - `Could NOT find SDL (missing: SDL_LIBRARY SDL_INCLUDE_DIR) ` のエラーが出たら以下を実行（[参考](https://github.com/ros-planning/navigation/issues/579)）
@@ -39,6 +39,7 @@ sudo apt-get install libsdl-image1.2-dev libsdl-dev
     ```
     roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
     ```
+  ![rosgraph_fake](https://user-images.githubusercontent.com/63488322/203759396-e913d94b-8de7-496c-9d5b-ecc8830caac7.png)
 2. Gazebo での動作確認
   - ターミナル①
     ```
@@ -52,6 +53,7 @@ sudo apt-get install libsdl-image1.2-dev libsdl-dev
     ```
     roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
     ```
+  ![rosgraph_gazebo](https://user-images.githubusercontent.com/63488322/203759402-4849fb04-254b-4864-8fda-caed2bebafc9.png)
 
 ## ■ GMapping の動作確認
 
@@ -71,6 +73,7 @@ sudo apt-get install libsdl-image1.2-dev libsdl-dev
   ```
   roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
   ```
+![rosgraph_gmapping](https://user-images.githubusercontent.com/63488322/203759405-c54b8c62-5354-4382-a662-eb8c0c890e74.png)
 
 ## ■ 参考
 
